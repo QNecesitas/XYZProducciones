@@ -14,16 +14,26 @@
   --text_s: 14px !important;
   --text_m: 16px !important;
   --text_h: 18px !important;
+  --btn-color: #6750a4;
+  --form-color: hsla(288, 2%, 57%, 0.842);
 }
 
 /* ==========================================================================
    Your code for devices with over than 600px (PC)
    ========================================================================== */
 * {
-
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 html {
+   font-size: 62.5%;
+}
+
+p{
+   font-size: var(--text_h);
+   font-family: sans-serif;
 }
 
 
@@ -44,3 +54,209 @@ html {
 /* ==========================================================================
    End of your code for devices with less than 600px (Mobile)
    ========================================================================== */
+
+
+   .carousel-style{
+         height: 100vh;
+         background-position: center center;
+         background-size: cover; 
+         margin-top: 3%;
+   }
+ 
+   .barra{
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      padding: 1rem;
+      transition: opacity.2s ease-in-out;
+
+   }
+
+   .btn-read{
+      background-color: var(--btn-color);
+      font-size: 2rem;
+      padding: 1rem;
+   }
+
+
+   .main-info{
+      margin: 5% 10%;
+      text-align: justify;
+   }
+   
+   .h2-mainInfo{
+      margin-bottom: 3%;
+      text-align: center;
+   }
+
+
+   .section1-fondo{
+      background: url(../img/audiovisual.jpg);
+      background-position: center center;
+      background-size: cover; 
+      height: 100%;
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 7rem;
+      position: relative;
+   }
+ 
+
+  
+    @media(min-width: 768px) {
+      .section1-fondo{
+      height: 80vh;
+      width: 100%;
+      padding-top: 5rem;
+      font-size: var(--text_h);
+   }
+   }
+
+   .section2-fondo{
+      background: url(../img/woman2.jpg);
+      background-position: center center;
+      background-size: cover; 
+      height: 40vh;
+      width: 100%;
+
+   }
+   @media(min-width: 768px) {
+      .section2-fondo{
+      height: 90vh;
+      width: 100%;
+   }
+   }
+
+
+   /*form*/
+
+   .form-container {
+      margin: 5rem auto 0;
+      width: 80%;
+      background: linear-gradient( var(--form-color), var(--form-color)) padding-box, linear-gradient(145deg, transparent 35%, #075fe2, #313131) border-box;
+      border: 2px solid transparent;
+      padding: 32px 40px;
+      font-size: 16px;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-radius: 16px;
+      position: relative;
+  }
+  
+  .close-button {
+      position: absolute;
+      bottom: 32px;
+      right: 20px;
+      background-color: #313131;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .close-button:hover {
+      background-color: #f30018;
+  }
+  
+  .form-container button:active {
+      scale: 0.95;
+  }
+  
+  .form-container .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  
+  .form-container .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+  }
+  
+  .form-container .form-group .center {
+      text-align: center;
+      font-size: 2.3rem;
+  }
+
+  @media(min-width: 768px) {
+   .form-container .form-group .center {
+
+      font-size: 3rem;
+  }
+}
+
+  
+  .form-container .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+  }
+  
+  .form-container .form-group input {
+      width: 100%;
+      padding: 10px 10px;
+      border-radius: 8px;
+      color: #fff;
+      font-family: sans-serif;
+      background-color: transparent;
+      border: 1px solid #fff;
+  }
+  
+  .form-container .form-group textarea {
+      width: 100%;
+      padding: 12px 10px;
+      border-radius: 8px;
+      resize: none;
+      color: #fff;
+      height: 96px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+      opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+      outline: none;
+      border-color: #060407;
+  }
+  
+  .form-container .form-group textarea:focus {
+      outline: none;
+      border-color: #060407;
+  }
+  
+  .form-container .form-submit-btn {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      align-self: flex-start;
+      font-family: sans-serif;
+      color: #fff;
+      font-weight: 600;
+      width: 40%;
+      background: #075fe2;
+      border: 1px solid #fff;
+      padding: 12px 16px;
+      font-size: inherit;
+      gap: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+      border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+      background-color: #313131;
+      border-color: #313131;
+  }

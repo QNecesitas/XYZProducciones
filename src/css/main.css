@@ -16,6 +16,7 @@
   --text_h: 18px !important;
   --btn-color: #6750a4;
   --form-color: hsla(288, 2%, 57%, 0.842);
+  --whats-color: #25D366;
 }
 
 /* ==========================================================================
@@ -55,14 +56,8 @@ p{
    End of your code for devices with less than 600px (Mobile)
    ========================================================================== */
 
+   /**Style header**/
 
-   .carousel-style{
-         height: 100vh;
-         background-position: center center;
-         background-size: cover; 
-         margin-top: 3%;
-   }
- 
    .barra{
       position: sticky;
       top: 0;
@@ -71,16 +66,60 @@ p{
       background-color: white;
       padding: 1rem;
       transition: opacity.2s ease-in-out;
-
    }
 
-   .btn-read{
-      background-color: var(--btn-color);
-      font-size: 2rem;
-      padding: 1rem;
+   
+   .btn-lang{
+      border: none;
+
+   }
+   @media(min-width: 768px) {
+      .barra h2{
+         margin-left: 28%;
+      }
+      .btn-lang{
+        margin-left: 28%;
+      }
+   }
+   /**Navbar**/
+   .nav-li{
+      margin-top: 1rem;
+   }
+   .nav-a{
+      text-decoration: none;
+      color: #060407;
+      font-size: var(--text_s);
+      margin-bottom: 1.5rem;
    }
 
+   /**Iconos de Contacto**/
+   .contact-us{
+      margin-top: 10rem;
+   }
+   .ul-icons{
+      list-style: none;
+      margin-top: 3rem;
+      display: flex;
 
+   }
+   .li-icons{
+      margin: 1rem auto;
+
+   }
+   .li-icons a{
+      text-decoration: none;
+      color: #060407;
+      display: flex;
+
+   }
+   .whats{
+      color: var(--whats-color);
+   }
+   .face{
+      color: #075fe2;
+   }
+
+   /**Main**/
    .main-info{
       margin: 5% 10%;
       text-align: justify;
@@ -91,6 +130,7 @@ p{
       text-align: center;
    }
 
+   /**Section1**/
 
    .section1-fondo{
       background: url(../img/audiovisual.jpg);
@@ -100,7 +140,6 @@ p{
       width: 100%;
       padding-top: 1rem;
       padding-bottom: 7rem;
-      position: relative;
    }
  
 
@@ -114,6 +153,8 @@ p{
    }
    }
 
+
+   /**section2**/
    .section2-fondo{
       background: url(../img/woman2.jpg);
       background-position: center center;
@@ -260,3 +301,165 @@ p{
       background-color: #313131;
       border-color: #313131;
   }
+
+
+  /**footer**/
+  .footer {
+   padding: 2rem;
+   background-color: #000000c0;
+   margin-top: 10rem;
+}
+
+.links {
+   display: flex;
+   /*gap: 20rem;*/
+   list-style: none;
+   justify-content: space-between;
+   margin-top: 2rem;
+}
+
+.a-link {
+   text-decoration: none;
+   color: #fff;
+   font-family: sans-serif;
+   font-size: var(--text_h);
+   text-align: center;
+}
+
+.line {
+   height: 2px;
+   background-color: hsla(0, 0%, 100%, 0.767);
+   margin: 0px auto;
+   width: 70%;
+   height: 1px;
+   margin-top: 3rem;
+}
+
+.info-footer {
+   margin: 0 auto;
+   /* centra horizontalmente */
+   text-align: center;
+   color: #fff;
+   margin-top: 3rem;
+   line-height: 1.5rem;
+   font-size: var(--text_s);
+}
+.email-color{
+   color: #fff;
+}
+
+.li-icons-footer{
+
+}
+@media(min-width: 768px) {
+   .ul-icons-footer{
+      margin-left: 30rem;
+      margin-right: 30rem;
+   }
+   .links {
+      margin-left: 25rem;
+      margin-right: 25rem;
+   }
+}
+
+.boton-float {
+   position: fixed;
+   bottom: 1.5rem;
+   right: 1.5rem;
+   margin-left:90%;
+   border: none;
+   border-radius: 50%;
+   color: #313131;
+   border: #313131 1px solid;
+ }
+ 
+ .boton-float:hover {
+   cursor: pointer;
+   color: var(--btn-color);
+ }
+
+ .mostrar {
+   visibility: visible;
+   opacity: 1;
+ }
+ 
+ .btn-flotante.mostrar {
+   transform: scale(1);
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .btn-flotante:not(.mostrar) {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+ }
+
+
+ /**internas**/
+ .section1-services-fondo{
+   background: url(../img/chevrolet.jpg);
+ }
+
+ .section2-services-fondo{
+   background: url(../img/havana2.jpg);
+   
+ }
+ .section3-services-fondo{
+   background: url(../img/lago.jpg);
+   
+ }
+ .fondo-service{
+   background-position: center center;
+   background-size: cover; 
+   height: 40vh;
+   width: 100%;
+   padding-top: 1rem;
+   padding-bottom: 7rem;
+ }
+
+.container-sectionP{
+   margin: 5rem;
+}
+.container-sectionP h3{
+   text-align: center;
+   font-size: var(--text_h);
+   font-family: sans-serif;
+}
+ .section-proyect{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3rem;
+   gap: 1rem;
+ }
+
+ @media(min-width: 768px) {
+   .fondo-service{
+      height: 95vh;
+    }
+    .container-sectionP{
+      margin: 10rem auto;
+   }
+   .section-proyect{
+      margin-top: 10rem;
+      gap: 1.5rem;
+    }
+}
+
+.ampliar{
+   position: relative;
+   z-index: 1; 
+   transition: transform 0.5s ease-in-out;
+
+}
+.ampliar:hover{
+   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+   transform: scale(1.2);
+   cursor: pointer;
+
+}

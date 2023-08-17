@@ -6571,7 +6571,6 @@ textarea.form-control-lg {
 .offcanvas.offcanvas-end {
   top: 0;
   right: 0;
-  width: var(--bs-offcanvas-width);
   border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
   transform: translateX(100%);
 }

@@ -35,6 +35,7 @@ html {
 p{
    font-size: var(--text_h);
    font-family: sans-serif;
+   text-align: justify;
 }
 
 
@@ -447,7 +448,9 @@ p{
    padding-top: 1rem;
    padding-bottom: 7rem;
  }
-
+.ul-serv li{
+   font-size: var(--text_m);
+}
 .container-sectionP{
    margin: 5rem;
 }
